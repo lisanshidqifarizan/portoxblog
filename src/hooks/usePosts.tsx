@@ -1,9 +1,9 @@
-"use client"
+"use client";
 import { useContext } from "react";
-import { PostsContext } from "@/context/PostsProvider";
+import { PostsContext } from "@/context/Provider";
 
 export const usePosts = () => {
-    const context = useContext(PostsContext);
-    if (!context) throw new Error("usePosts must be used within a PostsProvider");
-    return context;
+	const context = useContext(PostsContext);
+	if (!context) throw new Error("usePosts must be used within a Provider");
+	return context;
 };
