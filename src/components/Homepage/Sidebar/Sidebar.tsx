@@ -69,7 +69,7 @@ export const SupportCard = () => {
 					className="p-2"
 				>
 					<img
-						className="h-[40px]"
+						className="h-[40px] cursor-pointer"
 						src="https://cdn.trakteer.id/images/embed/trbtn-red-1.png?date=18-11-2023"
 						alt="Support Kami"
 					/>

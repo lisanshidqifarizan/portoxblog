@@ -41,7 +41,7 @@ export default function Register() {
 	};
 
 	return (
-		<div className="w-full flex flex-col items-center justify-center h-screen">
+		<main className="w-full flex flex-col items-center justify-center h-screen">
 			<div className="w-full max-w-md bg-white p-6 border-4 border-black shadow-[6px_6px_0px_#000]">
 				<h2 className="text-3xl font-extrabold text-black mb-6 border-b-4 border-black pb-2 uppercase">
 					Register
@@ -112,6 +112,6 @@ export default function Register() {
 					</button>
 				</form>
 			</div>
-		</div>
+		</main>
 	);
 }

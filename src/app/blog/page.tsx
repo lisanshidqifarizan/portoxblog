@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function Home() {
 	return (
 		<>
-			<header className="w-full flex justify-center">
+			<header className="w-full flex justify-center border-b-2 border-black bg-white">
 				<Navigation />
 			</header>
 			<main className="w-full flex justify-center bg-[#f2f6f8]">
@@ -23,7 +23,7 @@ export default function Home() {
 					</PostsProvider>
 				</div>
 			</main>
-			<footer className="w-full flex justify-center bg-gray-100">
+			<footer className="w-full flex justify-center bg-gray-100 border-t-2">
 				<Footer />
 			</footer>
 		</>

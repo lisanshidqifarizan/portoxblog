@@ -2,32 +2,32 @@ import Link from "next/link";
 
 export default function Footer() {
 	return (
-		<div className="w-full px-6 py-10 sm:px-8 md:px-10 lg:px-12 xl:px-16 border-t-2">
+		<div className="w-[1440px] px-6 py-10 sm:px-8 md:px-10 lg:px-12 xl:px-16">
 			<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 text-black font-bold">
 				{/* Navigasi */}
 				<div className="flex flex-col gap-2 bg-white shadow-sm">
 					<h3 className="text-center text-lg tracking-wide uppercase border-b-1 border-black py-2">
 						Navigasi
 					</h3>
-					<ul className="flex flex-col gap-2 text-sm">
+					<ul className="grid grid-cols-2 gap-2 text-sm px-2 pb-2">
 						<li>
 							<Link href="/blog" className="hover:underline">
-								🏠 Home
+								| Home
 							</Link>
 						</li>
 						<li>
 							<Link href="/blog/disclaimer" className="hover:underline">
-								⚠️ Disclaimer
+								| Disclaimer
 							</Link>
 						</li>
 						<li>
 							<Link href="/blog/contact" className="hover:underline">
-								✉️ Contact
+								| Contact
 							</Link>
 						</li>
 						<li>
 							<Link href="/blog/about" className="hover:underline">
-								📘 About Us
+								| About Us
 							</Link>
 						</li>
 					</ul>
@@ -38,20 +38,20 @@ export default function Footer() {
 					<h3 className="text-center text-lg tracking-wide uppercase border-b-1 border-black py-2">
 						Informasi
 					</h3>
-					<ul className="flex flex-col gap-2 text-sm">
+					<ul className="grid grid-cols-2 gap-2 text-sm px-2 pb-2">
 						<li>
 							<Link href="/blog/faq" className="hover:underline">
-								❓ FAQ
+								| FAQ
 							</Link>
 						</li>
 						<li>
 							<Link href="/blog/sitemap" className="hover:underline">
-								🗺️ Sitemap
+								| Sitemap
 							</Link>
 						</li>
 						<li>
 							<Link href="/blog/privacy-policy" className="hover:underline">
-								🔒 Privacy Policy
+								| Privacy Policy
 							</Link>
 						</li>
 					</ul>

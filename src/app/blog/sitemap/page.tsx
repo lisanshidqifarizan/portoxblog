@@ -45,24 +45,28 @@ export default function SitemapPage() {
 	if (error) return <Notification message={error} />;
 
 	return (
-		<div className="max-w-4xl mx-auto mt-10 p-6 bg-white border-4 border-black shadow-[6px_6px_0px_0px_#000]">
-			<h1 className="text-3xl font-extrabold text-black mb-6">📌 Sitemap</h1>
-			<ul className="list-disc list-inside space-y-3">
-				{sitemap.map((entry, index) => (
-					<li key={index}>
-						<a
-							href={entry.loc}
-							className="text-blue-700 underline font-semibold hover:text-black transition"
-						>
-							{entry.loc.replace("https://veoveneht.eu.org/blog", "") ||
-								"/blog"}
-						</a>
-						<span className="text-gray-600 text-sm ml-2">
-							(Updated: {new Date(entry.lastmod).toLocaleDateString()})
-						</span>
-					</li>
-				))}
-			</ul>
-		</div>
+		<main className="w-full h-[100vh] flex justify-center items-center">
+			<div className="max-w-4xl p-6 bg-white border-4 border-black shadow-[6px_6px_0px_0px_#000]">
+				<h1 className="text-3xl font-extrabold text-black mb-6 border-b-2">
+					Sitemap
+				</h1>
+				<ul className="list-disc list-inside space-y-3">
+					{sitemap.map((entry, index) => (
+						<li key={index}>
+							<a
+								href={entry.loc}
+								className="text-blue-700 underline font-semibold hover:text-black transition"
+							>
+								{entry.loc.replace("https://veoveneht.eu.org/blog", "") ||
+									"/blog"}
+							</a>
+							<span className="text-gray-600 text-sm ml-2">
+								(Updated: {new Date(entry.lastmod).toLocaleDateString()})
+							</span>
+						</li>
+					))}
+				</ul>
+			</div>
+		</main>
 	);
 }

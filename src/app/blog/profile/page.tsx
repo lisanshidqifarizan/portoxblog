@@ -5,7 +5,7 @@ import { useAuth } from "@/context/Provider";
 export default function ProfilePage() {
 	const { user } = useAuth();
 	return (
-		<div className="w-full min-h-screen flex items-center justify-center bg-yellow-100 px-6">
+		<main className="w-full min-h-screen flex items-center justify-center bg-yellow-100 px-6">
 			<div className="border-4 border-black bg-white shadow-[6px_6px_0_#000] p-6 w-full max-w-md text-black">
 				<div className="flex flex-col items-center gap-4">
 					<img
@@ -30,6 +30,6 @@ export default function ProfilePage() {
 					</p>
 				</div>
 			</div>
-		</div>
+		</main>
 	);
 }

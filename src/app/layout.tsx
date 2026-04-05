@@ -30,7 +30,7 @@ export default function RootLayout({
 				/>
 			</head>
 			<body
-				className={`${mplus.className} min-h-full  flex flex-col justify-center`}
+				className={`${mplus.className} min-h-full flex flex-col justify-center porto-style`}
 			>
 				<AuthProvider>{children}</AuthProvider>
 			</body>

@@ -9,8 +9,8 @@ export default function Home() {
 	return (
 		<>
 			<PortfolioNavigation />
-			<main className="flex justify-center">
-				<div className="max-w-[1440px] w-full flex my-26">
+			<main className="flex justify-center text-white">
+				<div className="max-w-[1440px] w-full flex my-26 px-6">
 					<div className="w-1/2 flex justify-center items-center">
 						<Image
 							src="/img/favicon.png"

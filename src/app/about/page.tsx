@@ -13,10 +13,10 @@ export default function About() {
 		<>
 			<PortfolioNavigation />
 			<main className="flex justify-center">
-				<div className="flex flex-col gap-32">
+				<div className="flex flex-col gap-32 text-white">
 					<div className="flex gap-4">
 						<div>
-							<img src="https://minimal-nextjs-portfolio-website.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fdeveloper-pic-2.6775304f.jpg&w=640&q=75" />
+							<img className="rounded-full" src="/img/lisan.png" />
 						</div>
 						<div>
 							<h1>BIOGRAPHY</h1>

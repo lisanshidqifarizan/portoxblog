@@ -12,9 +12,10 @@ export default function Projects() {
 	return (
 		<>
 			<PortfolioNavigation />
-			<main className="flex justify-center">
+			<main className="flex justify-center h-[81vh] text-white">
 				<h1>Projects</h1>
 			</main>
+			<PortfolioFooter />
 		</>
 	);
 }
