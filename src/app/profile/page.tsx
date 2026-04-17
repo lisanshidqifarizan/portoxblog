@@ -1,3 +1,5 @@
+"use client";
+
 import { useAuth } from "@/context/Provider";
 
 export default function ProfilePage() {
