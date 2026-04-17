@@ -36,7 +36,7 @@ export default function Cards() {
 							{/* Title */}
 							<h1 className="w-fit hover:text-blue-500 hover:underline">
 								<Link
-									href={`/blog/${post.slug}`}
+									href={`/${post.slug}`}
 									className="w-fit text-[1.5rem] sm:text-[1.72rem] md:text-[2rem] "
 								>
 									{post.title}

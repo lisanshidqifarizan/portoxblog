@@ -26,7 +26,7 @@ export default function Profile() {
 			credentials: "include",
 		});
 		setUser(null);
-		router.replace("/blog/login");
+		router.replace("/login");
 	};
 
 	return (
@@ -77,14 +77,14 @@ export default function Profile() {
 						</div>
 						<div className="flex flex-col">
 							<Link
-								href="/blog/profile"
+								href="/profile"
 								className="bg-blue-200 px-2 py-2 shadow-md hover:bg-blue-300"
 							>
 								Profile
 							</Link>
 							{user.role === "admin" && (
 								<Link
-									href="/blog/dashboard"
+									href="/dashboard"
 									className="bg-lime-200 px-2 py-2 shadow-md hover:bg-lime-300"
 								>
 									Dashboard
@@ -103,13 +103,13 @@ export default function Profile() {
 				) : (
 					<div className="flex flex-col">
 						<Link
-							href="/blog/login"
+							href="/login"
 							className="bg-green-200 px-4 py-2 shadow-md text-center hover:bg-green-300"
 						>
 							Login
 						</Link>
 						<Link
-							href="/blog/register"
+							href="/register"
 							className="bg-blue-200 px-4 py-2 shadow-md text-center hover:bg-blue-300"
 						>
 							Register

@@ -1,69 +1,58 @@
-import { Metadata } from "next";
-import {
-	PortfolioNavigation,
-	PortfolioFooter,
-} from "@/components/PortfolioComponents";
-import Link from "next/link";
+import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "About | Lisan Shidqi Farizan",
+	title: "About | VEOveneht",
+	description: "About web VEOveneht!",
+	keywords:
+		"veoveneht, VEOveneht, Veo Veneht, veo veneht, website, games, teknologi",
+	authors: [
+		{ name: "Lisan Shidqi Farizan", url: "https://veoveneht.eu.org/about" },
+	],
 };
 
 export default function About() {
 	return (
-		<>
-			<PortfolioNavigation />
-			<main className="flex justify-center">
-				<div className="max-w-[1440px] w-full flex flex-col my-12 px-6 gap-4 text-white">
-					<div className="flex mx-36 gap-4">
-						<div className="flex items-center justify-center">
-							<img className="rounded-full" src="/img/lisan.png" />
-						</div>
-						<div>
-							<h1>BIOGRAPHY</h1>
-							<p>
-								I'm a web developer focused on modern application development
-								using Next.js and React. I'm interested in building modular,
-								fast, and responsive interfaces using approaches like
-								Server-Side Rendering (SSR) and Static Site Generation (SSG). In
-								addition to front-end development, I'm also exploring back-end
-								development using MongoDB to efficiently manage data and build
-								scalable systems. Currently, I'm continuing to develop my skills
-								in full-stack development and am interested in Rust programming.
-								For me, technology isn't just a tool, but also a medium for
-								understanding and building systems that align logic, structure,
-								and reality.
-							</p>
-						</div>
-					</div>
-					<div>
-						<h1>SKILLS & TOOLS</h1>
-						<div className="grid grid-cols-5 place-content-center place-items-center gap-2">
-							<img src="/img/skills/html.png" alt="" />
-							<img src="/img/skills/css.png" alt="" />
-							<img src="/img/skills/js.png" alt="" />
-							<img src="/img/skills/next.png" alt="" />
-							<img src="/img/skills/rust.png" alt="" />
-							<img src="/img/skills/github.png" alt="" />
-							<img src="/img/skills/git.png" alt="" />
-							<img src="/img/skills/vsc.png" alt="" />
-						</div>
-					</div>
-					<div>
-						<h1>EXPERIENCE</h1>
-						<div className="grid grid-cols-2 place-content-center place-items-center gap-2">
-							<div>
-								<h2>Blog</h2>
-								<Link href="https://veoveneht.eu.org/">veoveneht.eu.org</Link>
-							</div>
-						</div>
-					</div>
-					<div>
-						<h1>EDUCATION</h1>
-					</div>
-				</div>
-			</main>
-			<PortfolioFooter />
-		</>
+		<main className="w-full h-[100vh] flex justify-center items-center">
+			<div className="max-w-3xl mx-auto py-12 px-6 border-4 border-black  shadow-[6px_6px_0_0_#000] text-gray-900">
+				<h1 className="text-4xl font-bold mb-4 border-b-2">About VEOveneht</h1>
+				<p className="mb-6 text-lg leading-relaxed">
+					<strong>VEOveneht</strong> is a platform dedicated to those who are
+					thirsty for knowledge in the digital world. We present various
+					interesting content about{" "}
+					<span className="font-semibold">
+						tutorials, games, and technology
+					</span>{" "}
+					with an easy-to-understand and applicable approach.
+				</p>
+
+				<h2 className="text-2xl font-semibold mb-2 mt-6">Tutorials & Guides</h2>
+				<p className="mb-4">
+					From beginners to advanced levels, we provide various tutorials
+					ranging from programming, web design tips, tool usage, to best
+					practices needed in the digital era.
+				</p>
+
+				<h2 className="text-2xl font-semibold mb-2 mt-6">Games & Review</h2>
+				<p className="mb-4">
+					Not only playing, we also discuss games in depth—from reviews, tips &
+					tricks, to interesting insights from the local and global gaming
+					industry.
+				</p>
+
+				<h2 className="text-2xl font-semibold mb-2 mt-6">
+					Technology & Innovation
+				</h2>
+				<p className="mb-4">
+					The world of technology is evolving rapidly. Here, you will find the
+					latest updates on software, hardware, AI, gadgets, and emerging
+					innovations.
+				</p>
+
+				<p className="mt-10 border-t-2 border-black pt-4 text-sm mt-8 text-sm text-gray-500 italic">
+					We believe that sharing knowledge is power. Thank you for being part
+					of the VEOveneht community!
+				</p>
+			</div>
+		</main>
 	);
 }

@@ -11,22 +11,22 @@ export default function Footer() {
 					</h3>
 					<ul className="grid grid-cols-2 gap-2 text-sm px-2 pb-2">
 						<li>
-							<Link href="/blog" className="hover:underline">
+							<Link href="/" className="hover:underline">
 								| Home
 							</Link>
 						</li>
 						<li>
-							<Link href="/blog/disclaimer" className="hover:underline">
+							<Link href="/disclaimer" className="hover:underline">
 								| Disclaimer
 							</Link>
 						</li>
 						<li>
-							<Link href="/blog/contact" className="hover:underline">
+							<Link href="/contact" className="hover:underline">
 								| Contact
 							</Link>
 						</li>
 						<li>
-							<Link href="/blog/about" className="hover:underline">
+							<Link href="/about" className="hover:underline">
 								| About Us
 							</Link>
 						</li>
@@ -40,17 +40,17 @@ export default function Footer() {
 					</h3>
 					<ul className="grid grid-cols-2 gap-2 text-sm px-2 pb-2">
 						<li>
-							<Link href="/blog/faq" className="hover:underline">
+							<Link href="/faq" className="hover:underline">
 								| FAQ
 							</Link>
 						</li>
 						<li>
-							<Link href="/blog/sitemap" className="hover:underline">
+							<Link href="/sitemap" className="hover:underline">
 								| Sitemap
 							</Link>
 						</li>
 						<li>
-							<Link href="/blog/privacy-policy" className="hover:underline">
+							<Link href="/privacy-policy" className="hover:underline">
 								| Privacy Policy
 							</Link>
 						</li>

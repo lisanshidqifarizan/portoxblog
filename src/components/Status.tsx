@@ -27,7 +27,7 @@ export const NotFound = () => {
 					Oops! Sepertinya halaman yang kamu cari tidak tersedia.
 				</p>
 				<Link
-					href="/blog"
+					href="/"
 					className="inline-block px-6 py-2 bg-black text-white border-2 border-black hover:bg-yellow-300 hover:text-black shadow-[3px_3px_0px_#000] transition-all"
 				>
 					⬅️ Kembali ke Beranda

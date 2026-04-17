@@ -13,11 +13,11 @@ export const PortfolioNavigation = () => {
 							Home
 							<span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
 						</Link>
-						<Link href="/about" className="relative group">
+						<Link href="/portfolio/about" className="relative group">
 							About
 							<span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
 						</Link>
-						<Link href="/projects" className="relative group">
+						<Link href="/portfolio/projects" className="relative group">
 							Projects
 							<span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
 						</Link>
