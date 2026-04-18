@@ -25,6 +25,17 @@ export default function RootLayout({
 	return (
 		<html lang="en" className="">
 			<head>
+				<Script
+					async
+					src="https://www.googletagmanager.com/gtag/js?id=G-KN2QD3WWYK"
+					strategy="afterInteractive"
+				></Script>
+				<Script id="google-analytics" strategy="afterInteractive">
+					{`window.dataLayer = window.dataLayer || [];
+				function gtag(){dataLayer.push(arguments);}
+				gtag('js', new Date());
+				gtag('config', 'G-KN2QD3WWYK');`}
+				</Script>
 				<meta name="google-adsense-account" content="ca-pub-9011893833126307" />
 				<link
 					rel="stylesheet"
