@@ -22,17 +22,10 @@ export default function About() {
 						<div>
 							<h1>BIOGRAPHY</h1>
 							<p>
-								I'm a web developer focused on modern application development
-								using Next.js and React. I'm interested in building modular,
-								fast, and responsive interfaces using approaches like
-								Server-Side Rendering (SSR) and Static Site Generation (SSG). In
-								addition to front-end development, I'm also exploring back-end
-								development using MongoDB to efficiently manage data and build
-								scalable systems. Currently, I'm continuing to develop my skills
-								in full-stack development and am interested in Rust programming.
-								For me, technology isn't just a tool, but also a medium for
-								understanding and building systems that align logic, structure,
-								and reality.
+								I'm a web developer focused on building modern, performant web
+								applications using Next.js and React. I have experience in
+								developing full-stack systems with MongoDB, implementing
+								SSR/SSG, and optimizing applications for performance and SEO.
 							</p>
 						</div>
 					</div>
@@ -43,10 +36,13 @@ export default function About() {
 							<img src="/img/skills/css.png" alt="" />
 							<img src="/img/skills/js.png" alt="" />
 							<img src="/img/skills/next.png" alt="" />
+							<img src="/img/skills/mongodb.png" alt="" />
 							<img src="/img/skills/rust.png" alt="" />
 							<img src="/img/skills/github.png" alt="" />
 							<img src="/img/skills/git.png" alt="" />
 							<img src="/img/skills/vsc.png" alt="" />
+							<img src="/img/skills/tiptap.png" alt="" />
+							<img src="/img/skills/cloudinary.png" alt="" />
 						</div>
 					</div>
 					<div>
@@ -65,21 +61,26 @@ export default function About() {
 
 								<ul className="list-disc ml-5">
 									<li>
-										Building and developing a blog using Next.js (App Router)
-										and React
+										Built a full-stack developer blog using Next.js (App Router)
+										with MongoDB as the primary database, integrating Tiptap for
+										rich text editing and Cloudinary for media management.
 									</li>
 									<li>
-										Implementing SSR and SSG for performance optimization and
-										SEO
+										Implemented dynamic routing and server-side rendering
+										(SSR/SSG) to improve performance and SEO.
 									</li>
 									<li>
-										Design and manage content structure for technical articles
-										web development
+										Designed and structured a scalable content system for
+										technical articles, including categorization and dynamic
+										content rendering.
 									</li>
-									<li>Integrate MongoDB as a database for data storage</li>
 									<li>
-										Managing deployments using Vercel and domain configuration
-										with Cloudflare
+										Developed RESTful API routes for managing blog data (CRUD
+										operations).
+									</li>
+									<li>
+										Deployed the application using Vercel and configured domain
+										management and CDN optimization via Cloudflare.
 									</li>
 								</ul>
 							</div>
@@ -87,6 +88,22 @@ export default function About() {
 					</div>
 					<div>
 						<h1>EDUCATION</h1>
+
+						<div>
+							<h4 className="font-semibold">
+								Bachelor's Degree in Informatics Engineering
+							</h4>
+							<p>ARS University, Bandung</p>
+							<p>2023 – Present</p>
+						</div>
+
+						<div className="mt-2">
+							<h4 className="font-semibold">
+								Vocational High School (Business Management)
+							</h4>
+							<p>SMKS 45 Lembang</p>
+							<p>Graduated: 2022</p>
+						</div>
 					</div>
 				</div>
 			</main>
