@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 export default function About() {
 	return (
-		<>
+		<div className="porto-style">
 			<PortfolioNavigation />
 			<main className="flex justify-center">
 				<div className="max-w-[1440px] w-full flex flex-col my-12 px-6 gap-4 text-white">
@@ -56,7 +56,7 @@ export default function About() {
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									veoveneht.eu.org/
+									veoveneht.eu.org
 								</Link>
 
 								<ul className="list-disc ml-5">
@@ -108,6 +108,6 @@ export default function About() {
 				</div>
 			</main>
 			<PortfolioFooter />
-		</>
+		</div>
 	);
 }

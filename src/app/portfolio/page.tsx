@@ -8,7 +8,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: "Portfolio | VEOveneht",
+	title: "Portfolio | Lisan Shidqi Farizan",
 	description: "Portfolio web VEOveneht!",
 	keywords:
 		"veoveneht, VEOveneht, Veo Veneht, veo veneht, website, games, teknologi,lisan shidqi farizan, Lisan Shidqi Farizan, LISAN SHIDQI FARIZAN, LISAN, lisan, Lisan",
@@ -19,9 +19,9 @@ export const metadata: Metadata = {
 
 export default function Home() {
 	return (
-		<>
+		<div className="porto-style">
 			<PortfolioNavigation />
-			<main className="flex justify-center text-white">
+			<main className="flex justify-center text-white min-h-[81.8vh]">
 				<div className="max-w-[1440px] w-full flex my-26 px-6">
 					<div className="w-1/2 flex justify-center items-center">
 						<Image
@@ -54,6 +54,6 @@ export default function Home() {
 				</div>
 			</main>
 			<PortfolioFooter />
-		</>
+		</div>
 	);
 }

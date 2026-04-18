@@ -1,6 +1,23 @@
+"use client";
+
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 export const PortfolioNavigation = () => {
+	const pathname = usePathname();
+
+	const navLink = (href: string, label: string) => {
+		const isActive = pathname == href;
+		return (
+			<Link href={href} className="relative group">
+				{label}
+				<span
+					className={`${isActive ? "absolute left-0 -bottom-1 h-[2px] w-full bg-white" : "absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"}`}
+				></span>
+			</Link>
+		);
+	};
+
 	return (
 		<header className="flex justify-center w-full h-auto text-white">
 			<nav className="flex items-center max-w-[1440px] w-full py-4 px-6">
@@ -9,18 +26,9 @@ export const PortfolioNavigation = () => {
 				</h1>
 				<div className="flex gap-2">
 					<ul className="flex gap-2">
-						<Link href="/" className="relative group">
-							Home
-							<span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-						</Link>
-						<Link href="/portfolio/about" className="relative group">
-							About
-							<span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-						</Link>
-						<Link href="/portfolio/projects" className="relative group">
-							Projects
-							<span className="absolute left-0 -bottom-1 h-[2px] w-0 bg-white transition-all duration-300 group-hover:w-full"></span>
-						</Link>
+						{navLink("/portfolio", "Home")}
+						{navLink("/portfolio/about", "About")}
+						{navLink("/portfolio/projects", "Projects")}
 					</ul>
 				</div>
 			</nav>
@@ -37,7 +45,7 @@ export const PortfolioFooter = () => {
 				<p>
 					<Link
 						href="https://instagram.com/veoveneht"
-						className="decoration-green-500 hover:underline decoration-2"
+						className="decoration-white-500 hover:underline decoration-2"
 						rel="noopener noreferrer"
 						target="_blank"
 					>
