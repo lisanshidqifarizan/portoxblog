@@ -1,20 +1,9 @@
 import { MetadataRoute } from "next";
-import { getPosts } from "@/lib/api";
-import { typesPosts } from "@/lib/types";
-
-async function getAllPosts(): Promise<{ slug: string; updatedAt: Date }[]> {
-	const data: typesPosts[] = await getPosts();
-
-	return data.map((post) => ({
-		slug: post.slug,
-		title: post.title,
-		updatedAt: new Date(post.updatedAt),
-	}));
-}
+import { getPostsForSitemap } from "@/lib/getPostsForSitemap";
 
 export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 	const baseUrl = "https://veoveneht.eu.org";
-	const posts = await getAllPosts();
+	const posts = await getPostsForSitemap();
 
 	return [
 		{
@@ -28,7 +17,8 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
 		...posts.map((post) => ({
 			url: `${baseUrl}/${post.slug}`,
-			lastModified: post.updatedAt,
+			title: `${baseUrl}/${post.title}`,
+			lastModified: new Date(post.updatedAt),
 		})),
 	];
 }
