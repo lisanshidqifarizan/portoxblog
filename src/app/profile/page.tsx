@@ -9,7 +9,7 @@ export default function ProfilePage() {
 			<div className="border-4 border-black bg-white shadow-[6px_6px_0_#000] p-6 w-full max-w-md text-black">
 				<div className="flex flex-col items-center gap-4">
 					<img
-						src={user?.avatar}
+						src={user?.avatar || "/img/favicon.png"}
 						alt="Profile"
 						className="w-28 h-28 rounded-full object-cover"
 					/>

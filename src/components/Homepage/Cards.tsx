@@ -26,28 +26,30 @@ export default function Cards() {
 			) : posts.length === 0 ? (
 				<NotFound />
 			) : (
-				currentPosts.map((post) => (
+				<>
+				<p className="font-semibold bg-white px-4 shadow-sm rounded">LATEST POSTS</p>
+				{currentPosts.map((post) => (
 					<div
 						key={post._id}
 						className="flex flex-col w-full min-w-[300px] gap-2 px-4 pb-4 bg-white rounded shadow-sm"
 					>
 						{/* Meta Info */}
-						<div className="flex flex-col text-sm text-black flex-wrap font-semibold">
+						<div className="flex flex-col text-sm text-black flex-wrap">
 							{/* Title */}
-							<h1 className="w-fit hover:text-blue-500 hover:underline">
+							<h2 className="w-fit hover:text-blue-500 transition duration-300 font-semibold">
 								<Link
 									href={`/${post.slug}`}
 									className="w-fit text-[1.5rem] sm:text-[1.72rem] md:text-[2rem] "
 								>
 									{post.title}
 								</Link>
-							</h1>
+							</h2>
 							<div className="flex gap-2 flex-wrap">
-								<p className="flex w-fit items-center">
-									<span className="material-symbols-outlined">person_edit</span>
+								<p className="flex w-fit items-center text-[12px]">
+									<span className="material-symbols-outlined text-[12px]">person_edit</span>
 									:{(post.author as any).username}
 								</p>
-								<p className="flex w-fit items-center">
+								<p className="flex w-fit items-center text-[12px]">
 									<span className="material-symbols-outlined">
 										calendar_month
 									</span>
@@ -79,7 +81,8 @@ export default function Cards() {
 							</div>
 						</div>
 					</div>
-				))
+				))}
+				</>
 			)}
 			<div className="flex justify-center gap-2 border-b-2 pb-4">
 				<button

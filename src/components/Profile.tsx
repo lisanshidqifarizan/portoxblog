@@ -56,16 +56,12 @@ export default function Profile() {
 			</button>
 
 			{/* Dropdown Neo-Brutalist Style */}
-			<div
-				className={`absolute top-[58px] shadow-lg border-t-2 right-0 z-50 transition-all duration-500 overflow-hidden bg-white ${
-					dropDown ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
-				} w-[260px]`}
-			>
+			<>
 				{user ? (
-					<>
+					<div className={`absolute top-[63px] shadow-lg border-t-2 right-0 z-50 transition-all duration-500 overflow-hidden bg-white ${dropDown ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"} w-[260px]`}>
 						<div className="flex items-center gap-2 p-2 border-b-1 border-black">
 							<img
-								src={user.avatar}
+								src={user.avatar || "/img/favicon.png"}
 								alt="Avatar"
 								className="w-[48px] h-[48px]"
 							/>
@@ -78,14 +74,14 @@ export default function Profile() {
 						<div className="flex flex-col">
 							<Link
 								href="/profile"
-								className="bg-blue-200 px-2 py-2 shadow-md hover:bg-blue-300"
+								className="px-2 py-2 hover:text-blue-500"
 							>
 								Profile
 							</Link>
 							{user.role === "admin" && (
 								<Link
 									href="/dashboard"
-									className="bg-lime-200 px-2 py-2 shadow-md hover:bg-lime-300"
+									className="px-2 py-2 hover:text-blue-500"
 								>
 									Dashboard
 								</Link>
@@ -94,29 +90,31 @@ export default function Profile() {
 								onClick={() => {
 									handleLogout();
 								}}
-								className="bg-red-200 px-2 py-2 rounded-b-lg shadow-md hover:bg-red-300 text-left"
+								className="px-2 py-2 rounded-b-lg hover:text-red-500 text-left"
 							>
 								Logout
 							</button>
 						</div>
-					</>
+					</div>
 				) : (
-					<div className="flex flex-col">
-						<Link
-							href="/login"
-							className="bg-green-200 px-4 py-2 shadow-md text-center hover:bg-green-300"
-						>
-							Login
-						</Link>
-						<Link
-							href="/register"
-							className="bg-blue-200 px-4 py-2 shadow-md text-center hover:bg-blue-300"
-						>
-							Register
-						</Link>
+					<div className={`absolute top-[58px] shadow-lg border-t-2 right-0 z-50 transition-all duration-500 overflow-hidden bg-white ${dropDown ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"} w-[260px]`}>
+						<div className="flex flex-col">
+							<Link
+								href="/login"
+								className="px-4 py-2 text-center hover:text-blue-500"
+							>
+								Login
+							</Link>
+							<Link
+								href="/register"
+								className="px-4 py-2 text-center hover:text-blue-500"
+							>
+								Register
+							</Link>
+						</div>
 					</div>
 				)}
-			</div>
+			</>
 		</div>
 	);
 }

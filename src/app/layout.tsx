@@ -1,18 +1,18 @@
 import type { Metadata } from "next";
 import Script from "next/script";
 import { AuthProvider } from "@/context/Provider";
-import { M_PLUS_Rounded_1c } from "next/font/google";
+import { Fira_Sans } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
 	title: "Lisan Shidqi Farizan",
 
 	icons: {
-		icon: "/img/favicon.png",
+		icon: "/img/logo-med.png",
 	},
 };
 
-const mplus = M_PLUS_Rounded_1c({
+const firasans = Fira_Sans({
 	subsets: ["latin"],
 	weight: ["300", "400", "700"],
 });
@@ -43,7 +43,7 @@ export default function RootLayout({
 				/>
 			</head>
 			<body
-				className={`${mplus.className} min-h-full flex flex-col justify-center`}
+				className={`${firasans.className} min-h-full flex flex-col justify-center`}
 			>
 				<AuthProvider>{children}</AuthProvider>
 

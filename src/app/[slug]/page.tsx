@@ -99,9 +99,7 @@ export default function SlugPage() {
 					<Sidebar />
 				</div>
 			</main>
-			<footer className="w-full flex justify-center bg-gray-100">
 				<Footer />
-			</footer>
 		</>
 	);
 }

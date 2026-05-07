@@ -31,7 +31,7 @@ export const Tags = () => {
 
 	return (
 		<div className="bg-white rounded shadow-sm">
-			<h4 className="text-center text-lg tracking-wide uppercase border-b border-black">
+			<h4 className="text-center text-lg tracking-wide uppercase border-b border-gray-300">
 				Tags
 			</h4>
 			<div className="flex flex-wrap gap-1 p-2">
@@ -58,7 +58,7 @@ export const Tags = () => {
 export const SupportCard = () => {
 	return (
 		<div className="bg-white rounded shadow-sm">
-			<h4 className="text-center text-lg tracking-wide uppercase border-b-1 border-black">
+			<h4 className="text-center text-lg tracking-wide uppercase border-b-1 border-gray-300">
 				Support Us
 			</h4>
 			<div className="flex justify-center items-center">

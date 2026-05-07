@@ -15,7 +15,7 @@ const UserSchema = new Schema<IUsers>({
     email: { type: String, required: true, unique: true },
     password: { type: String, required: true },
     role: { type: String, enum: ['admin', 'user'], default: 'user' },
-    avatar: { type: String, default: 'img/person.png' },
+    avatar: { type: String },
 }, { timestamps: true });
 
 const Users = mongoose.models.Users || mongoose.model<IUsers>('Users', UserSchema);

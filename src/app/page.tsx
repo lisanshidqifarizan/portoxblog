@@ -6,7 +6,7 @@ import Cards from "@/components/Homepage/Cards";
 import { PostsProvider } from "@/context/Provider";
 
 export const metadata: Metadata = {
-	title: "Blog | VEOveneht",
+	title: "VEOveneht",
 };
 
 export default function Home() {
@@ -21,9 +21,7 @@ export default function Home() {
 					</PostsProvider>
 				</div>
 			</main>
-			<footer className="w-full flex justify-center bg-gray-100 border-t-2">
-				<Footer />
-			</footer>
+			<Footer />
 		</>
 	);
 }

@@ -32,8 +32,8 @@ export default function CLogin() {
 
 	return (
 		<main className="w-full flex flex-col items-center justify-center h-screen">
-			<div className="w-full max-w-md bg-white p-6 border-4 border-black shadow-[6px_6px_0px_#000]">
-				<h2 className="text-3xl font-extrabold text-black mb-6 border-b-4 border-black pb-2 uppercase">
+			<div className="w-full max-w-md bg-white p-6 border-1 border-black rounded-lg shadow-md">
+				<h2 className="text-3xl font-semibold text-black mb-6 border-b-1 border-black pb-2 uppercase">
 					Login
 				</h2>
 				<form onSubmit={onsubmit} className="flex flex-col w-fit gap-2">
@@ -43,7 +43,7 @@ export default function CLogin() {
 							value={email}
 							placeholder="Email address"
 							onChange={(e) => setEmail(e.target.value)}
-							className="w-full p-3 border-2 border-black rounded bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-black transition ease-in-out duration-150"
+							className="w-full p-3 border-2 rounded bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-black transition ease-in-out duration-150"
 						/>
 					</label>
 					<label>
@@ -52,7 +52,7 @@ export default function CLogin() {
 							value={password}
 							placeholder="Password"
 							onChange={(e) => setPassword(e.target.value)}
-							className="w-full p-3 border-2 border-black rounded bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-2 focus:ring-black transition ease-in-out duration-150"
+							className="w-full p-3 border-2 rounded bg-gray-100 text-black placeholder-gray-600 focus:outline-none focus:ring-1 focus:ring-black transition ease-in-out duration-150"
 						/>
 					</label>
 					<div className="flex items-center justify-between flex-wrap">
