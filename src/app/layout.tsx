@@ -5,6 +5,7 @@ import { Fira_Sans } from "next/font/google";
 import "./globals.css";
 
 export const metadata: Metadata = {
+	metadataBase: new URL("https://veoveneht.eu.org"),
 	title: "Lisan Shidqi Farizan | Frontend & Fullstack Developer (Next.js, React, TypeScript)",
 	description: "Portfolio Lisan Shidqi Farizan, Frontend & Fullstack Developer yang fokus pada pengembangan web modern menggunakan Next.js, React, TypeScript, dan MongoDB.",
 	keywords: [

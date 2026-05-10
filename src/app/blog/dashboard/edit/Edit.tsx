@@ -50,7 +50,7 @@ export default function CEdit() {
 
 			if (success) {
 				alert("Post updated successfully!");
-				router.push("/dashboard");
+				router.push("/blog/dashboard");
 			}
 		} catch (err) {
 			console.error("Error updating post:", err);

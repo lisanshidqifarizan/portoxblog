@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 	keywords:
 		"veoveneht, VEOveneht, Veo Veneht, veo veneht, website, games, teknologi",
 	authors: [
-		{ name: "Lisan Shidqi Farizan", url: "https://veoveneht.eu.org/faq" },
+		{ name: "Lisan Shidqi Farizan", url: "https://veoveneht.eu.org/blog/faq" },
 	],
 };
 
@@ -40,7 +40,7 @@ export default function FAQ() {
 						<h2 className="text-xl font-bold text-black">Can I contribute?</h2>
 						<p className="text-base text-gray-800">
 							Of course! You can submit articles or tutorials through the page{" "}
-							<a href="/contact" className="text-blue-600 underline">
+							<a href="/blog/contact" className="text-blue-600 underline">
 								Contact
 							</a>
 							.
@@ -70,7 +70,7 @@ export default function FAQ() {
 
 				<footer className="mt-10 border-t-2 border-black pt-4 text-sm text-gray-700">
 					Still have questions? Contact us via{" "}
-					<a href="/contact" className="text-blue-600 underline">
+					<a href="/blog/contact" className="text-blue-600 underline">
 						contact form
 					</a>
 					.

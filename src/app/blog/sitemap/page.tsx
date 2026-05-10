@@ -57,7 +57,7 @@ export default function SitemapPage() {
 								href={entry.loc}
 								className="text-blue-700 underline font-semibold hover:text-black transition"
 							>
-								{entry.loc.replace("https://veoveneht.eu.org/", "") || "/"}
+								{entry.loc.replace("https://veoveneht.eu.org/blog/", "") || "/blog/"}
 							</a>
 							<span className="text-gray-600 text-sm ml-2">
 								(Updated: {new Date(entry.lastmod).toLocaleDateString()})

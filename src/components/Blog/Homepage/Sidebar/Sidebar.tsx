@@ -39,7 +39,7 @@ export const Tags = () => {
 					tags.map((tag, idx) => (
 						<Link
 							key={idx}
-							href={`/tags/${tag}`}
+							href={`/blog/tags/${tag}`}
 							className="bg-white text-sm px-2 py-1 border rounded hover:bg-black hover:text-white transition"
 						>
 							#{tag}

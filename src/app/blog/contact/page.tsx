@@ -6,7 +6,7 @@ export const metadata: Metadata = {
 	keywords:
 		"veoveneht, VEOveneht, Veo Veneht, veo veneht, website, games, teknologi",
 	authors: [
-		{ name: "Lisan Shidqi Farizan", url: "https://veoveneht.eu.org/contact" },
+		{ name: "Lisan Shidqi Farizan", url: "https://veoveneht.eu.org/blog/contact" },
 	],
 };
 

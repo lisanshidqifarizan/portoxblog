@@ -38,14 +38,21 @@ export async function getPostById(id: string) {
 }
 
 export async function getPosts() {
-	const res = await fetch("/api/posts", {
-		method: "GET",
-		headers: { "Content-Type": "application/json" },
-	});
-
-	if (!res.ok) throw new Error(`HTTP error! status: ${res.status}!`);
-
-	return await res.json();
+	try {
+		const res = await fetch("/api/posts", {
+			method: "GET",
+			headers: { "Content-Type": "application/json" },
+		});
+	
+		if (!res.ok) throw new Error(`HTTP error! status: ${res.status}!`);
+	
+		return await res.json();
+	} catch (e) {
+		console.error(e instanceof Error ? `Error: ${e.message}` : e);
+		return {
+			posts: [],
+		};
+	}
 }
 
 // * Add posts

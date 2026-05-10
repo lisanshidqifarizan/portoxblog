@@ -64,7 +64,7 @@ export default function PostByTags() {
 									{/* Title */}
 									<h1 className="w-fit hover:text-blue-500 hover:underline">
 										<Link
-											href={`/${post.slug}`}
+											href={`/blog/${post.slug}`}
 											className="w-fit text-[1.5rem] sm:text-[1.72rem] md:text-[2rem] "
 										>
 											{post.title}
@@ -79,7 +79,7 @@ export default function PostByTags() {
 								</div>
 								<div className="max-w-[560px] flex gap-2 flex-col sm:max-w-[768px] sm:flex-row">
 									<Link
-										href={post.slug}
+										href={`/blog/${post.slug}`}
 										className="w-full h-full min-w-[210px] max-w-[640px] min-h-[140px] max-h-[200px] sm:max-w-[210px] sm:max-h-[15px] flex block overflow-hidden rounded"
 									>
 										<img
@@ -94,7 +94,7 @@ export default function PostByTags() {
 											...
 										</p>
 										<Link
-											href={post.slug}
+											href={`/blog/${post.slug}`}
 											className="text-blue-500 hover:underline"
 										>
 											&gt;Read More

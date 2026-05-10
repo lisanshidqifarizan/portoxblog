@@ -21,7 +21,7 @@ export default function CLogin() {
 			if (data) {
 				setEmail("");
 				setPassword("");
-				router.push("/");
+				router.push("/blog/");
 			} else {
 				alert(data.message);
 			}
@@ -73,7 +73,7 @@ export default function CLogin() {
 							{" "}
 							Don't have an account?{" "}
 							<a
-								href="/register"
+								href="/blog/register"
 								className="text-sm text-blue-500 -200 hover:underline mt-4"
 							>
 								Register

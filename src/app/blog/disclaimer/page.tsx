@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	authors: [
 		{
 			name: "Lisan Shidqi Farizan",
-			url: "https://veoveneht.eu.org/disclaimer",
+			url: "https://veoveneht.eu.org/blog/disclaimer",
 		},
 	],
 };
@@ -67,7 +67,7 @@ export default function Disclaimer() {
 
 				<div className="mt-10 border-t-2 border-black pt-4 text-sm text-gray-700">
 					If you have any questions, please contact us via the page{" "}
-					<a href="/contact" className="text-blue-600 underline">
+					<a href="/blog/contact" className="text-blue-600 underline">
 						Contact
 					</a>
 					.

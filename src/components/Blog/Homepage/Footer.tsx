@@ -12,22 +12,22 @@ export default function Footer() {
 						</h3>
 						<ul className="grid grid-cols-2 gap-2 text-sm px-2 pb-2">
 							<li>
-								<Link href="/" className="hover:underline hover:text-blue-500">
+								<Link href="/blog/" className="hover:underline hover:text-blue-500">
 									| Home
 								</Link>
 							</li>
 							<li>
-								<Link href="/disclaimer" className="hover:underline hover:text-blue-500">
+								<Link href="/blog/disclaimer" className="hover:underline hover:text-blue-500">
 									| Disclaimer
 								</Link>
 							</li>
 							<li>
-								<Link href="/contact" className="hover:underline hover:text-blue-500">
+								<Link href="/blog/contact" className="hover:underline hover:text-blue-500">
 									| Contact
 								</Link>
 							</li>
 							<li>
-								<Link href="/about" className="hover:underline hover:text-blue-500">
+								<Link href="/blog/about" className="hover:underline hover:text-blue-500">
 									| About Us
 								</Link>
 							</li>
@@ -41,17 +41,17 @@ export default function Footer() {
 						</h3>
 						<ul className="grid grid-cols-2 gap-2 text-sm px-2 pb-2">
 							<li>
-								<Link href="/faq" className="hover:underline hover:text-blue-500">
+								<Link href="/blog/faq" className="hover:underline hover:text-blue-500">
 									| FAQ
 								</Link>
 							</li>
 							<li>
-								<Link href="/sitemap" className="hover:underline hover:text-blue-500">
+								<Link href="/blog/sitemap" className="hover:underline hover:text-blue-500">
 									| Sitemap
 								</Link>
 							</li>
 							<li>
-								<Link href="/privacy-policy" className="hover:underline hover:text-blue-500">
+								<Link href="/blog/privacy-policy" className="hover:underline hover:text-blue-500">
 									| Privacy Policy
 								</Link>
 							</li>

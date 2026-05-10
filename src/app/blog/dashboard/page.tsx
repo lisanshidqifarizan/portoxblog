@@ -27,7 +27,7 @@ export default function Dashboard() {
 		fetch();
 		if (user?.role !== "admin") {
 			alert("Need admin access!");
-			router.push("/");
+			router.push("/blog/");
 		}
 	}, [router]);
 

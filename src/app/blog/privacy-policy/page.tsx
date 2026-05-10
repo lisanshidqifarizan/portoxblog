@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 	authors: [
 		{
 			name: "Lisan Shidqi Farizan",
-			url: "https://veoveneht.eu.org/privacy-policy",
+			url: "https://veoveneht.eu.org/blog/privacy-policy",
 		},
 	],
 };
@@ -79,11 +79,11 @@ export default function PrivacyPolicy() {
 					<li>
 						<strong>Website</strong>: veoveneht,{" "}
 						<a
-							href="https://veoveneht.eu.org/"
+							href="https://veoveneht.eu.org/blog/"
 							className="underline text-blue-600"
 							target="_blank"
 						>
-							https://veoveneht.eu.org/
+							https://veoveneht.eu.org/blog/
 						</a>
 					</li>
 					<li>
@@ -186,21 +186,21 @@ export default function PrivacyPolicy() {
 				<p>
 					Email:{" "}
 					<a
-						href="mailto:veoveneht@gmail.com?subject=What%20subject%3F&body=Fill%20this%20with%20your%20message"
+						href="mailto:admin@veoveneht.eu.org?subject=What%20subject%3F&body=Fill%20this%20with%20your%20message"
 						className="underline text-blue-600"
 					>
-						veoveneht@gmail.com
+						admin@veoveneht.eu.org
 					</a>
 				</p>
 				<p>
 					Contact page:{" "}
 					<a
-						href="https://veoveneht.eu.org/contact"
+						href="https://veoveneht.eu.org/blog/contact"
 						target="_blank"
 						rel="noopener noreferrer"
 						className="underline text-blue-600"
 					>
-						veoveneht.eu.org/contact
+						veoveneht.eu.org/blog/contact
 					</a>
 				</p>
 			</div>

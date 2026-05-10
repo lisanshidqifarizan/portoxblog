@@ -28,7 +28,7 @@ export default function Register() {
 				setUsername("");
 				setName("");
 				alert(data.message);
-				router.push("/login");
+				router.push("/blog/login");
 				return;
 			} else {
 				alert(data.message || "Failed to register, try again");
@@ -97,7 +97,7 @@ export default function Register() {
 							{" "}
 							Already have an account?{" "}
 							<a
-								href="/login"
+								href="/blog/login"
 								className="text-sm text-blue-500 -200 hover:underline"
 							>
 								Login
