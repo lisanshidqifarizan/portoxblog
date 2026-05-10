@@ -1,58 +1,106 @@
-import type { Metadata } from "next";
+import Link from "next/link";
+import { Metadata } from "next";
+import {
+	PortfolioNavigation,
+	PortfolioFooter,
+} from "@/components/PortfolioComponents";
+import Skills from "@/components/SkillComponents";
 
 export const metadata: Metadata = {
-	title: "About | VEOveneht",
-	description: "About web VEOveneht!",
-	keywords:
-		"veoveneht, VEOveneht, Veo Veneht, veo veneht, website, games, teknologi",
-	authors: [
-		{ name: "Lisan Shidqi Farizan", url: "https://veoveneht.eu.org/about" },
-	],
+	title: "Lisan Shidqi Farizan - Web Developer",
+	description: "Portfolio Lisan Shidqi Farizan, mahasiswa Informatika dan Fullstack Developer yang fokus pada pengembangan web modern menggunakan Next.js, React, TypeScript, dan MongoDB. Berpengalaman membangun aplikasi full-stack serta tertarik pada pengembangan backend, dan analisis sistem.",
+	icons: {
+		icon: "/img/favicon.png",
+	},
 };
 
 export default function About() {
 	return (
-		<main className="w-full h-[100vh] flex justify-center items-center">
-			<div className="max-w-3xl mx-auto py-12 px-6 border-4 border-black  shadow-[6px_6px_0_0_#000] text-gray-900">
-				<h1 className="text-4xl font-bold mb-4 border-b-2">About VEOveneht</h1>
-				<p className="mb-6 text-lg leading-relaxed">
-					<strong>VEOveneht</strong> is a platform dedicated to those who are
-					thirsty for knowledge in the digital world. We present various
-					interesting content about{" "}
-					<span className="font-semibold">
-						tutorials, games, and technology
-					</span>{" "}
-					with an easy-to-understand and applicable approach.
-				</p>
+		<div className="porto-style">
+			<PortfolioNavigation />
+			<main className="flex justify-center">
+				<div className="max-w-[1440px] w-full flex flex-col my-12 px-6 gap-4 text-white">
+					<div className="flex mx-36 gap-4">
+						<div className="flex items-center justify-center">
+							<img className="rounded-full" src="/img/lisan.png" alt="me"/>
+						</div>
+						<div>
+							<h1>LISAN SHIDQI FARIZAN</h1>
+							<p>
+								I'm a web developer focused on building modern, performant web
+								applications using Next.js and React. I have experience in
+								developing full-stack systems with MongoDB, implementing
+								SSR/SSG, and optimizing applications for performance and SEO.
+							</p>
+						</div>
+					</div>
+					<div>
+						<h1>SKILLS & TOOLS</h1>
+						<Skills/>
+					</div>
+					<div>
+						<h1>EXPERIENCE</h1>
+						<div className="grid grid-cols-2 place-content-center place-items-center gap-2">
+							<div>
+								<h4 className="font-semibold">Personal Developer Blog</h4>
+								<Link
+									href="https://veoveneht.eu.org/"
+									className="underline"
+									target="_blank"
+									rel="noopener noreferrer"
+								>
+									veoveneht.eu.org
+								</Link>
 
-				<h2 className="text-2xl font-semibold mb-2 mt-6">Tutorials & Guides</h2>
-				<p className="mb-4">
-					From beginners to advanced levels, we provide various tutorials
-					ranging from programming, web design tips, tool usage, to best
-					practices needed in the digital era.
-				</p>
+								<ul className="list-disc ml-5">
+									<li>
+										Built a full-stack developer blog using Next.js (App Router)
+										with MongoDB as the primary database, integrating Tiptap for
+										rich text editing and Cloudinary for media management.
+									</li>
+									<li>
+										Implemented dynamic routing and server-side rendering
+										(SSR/SSG) to improve performance and SEO.
+									</li>
+									<li>
+										Designed and structured a scalable content system for
+										technical articles, including categorization and dynamic
+										content rendering.
+									</li>
+									<li>
+										Developed RESTful API routes for managing blog data (CRUD
+										operations).
+									</li>
+									<li>
+										Deployed the application using Vercel and configured domain
+										management and CDN optimization via Cloudflare.
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div>
+						<h1>EDUCATION</h1>
 
-				<h2 className="text-2xl font-semibold mb-2 mt-6">Games & Review</h2>
-				<p className="mb-4">
-					Not only playing, we also discuss games in depth—from reviews, tips &
-					tricks, to interesting insights from the local and global gaming
-					industry.
-				</p>
+						<div>
+							<h4 className="font-semibold">
+								Bachelor's Degree in Informatics Engineering
+							</h4>
+							<p>ARS University, Bandung</p>
+							<p>2023 – Present</p>
+						</div>
 
-				<h2 className="text-2xl font-semibold mb-2 mt-6">
-					Technology & Innovation
-				</h2>
-				<p className="mb-4">
-					The world of technology is evolving rapidly. Here, you will find the
-					latest updates on software, hardware, AI, gadgets, and emerging
-					innovations.
-				</p>
-
-				<p className="mt-10 border-t-2 border-black pt-4 text-sm mt-8 text-sm text-gray-500 italic">
-					We believe that sharing knowledge is power. Thank you for being part
-					of the VEOveneht community!
-				</p>
-			</div>
-		</main>
+						<div className="mt-2">
+							<h4 className="font-semibold">
+								Vocational High School (Business Management)
+							</h4>
+							<p>SMKS 45 Lembang</p>
+							<p>2019 - 2022</p>
+						</div>
+					</div>
+				</div>
+			</main>
+			<PortfolioFooter />
+		</div>
 	);
 }

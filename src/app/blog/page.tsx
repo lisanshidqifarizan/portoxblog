@@ -1,0 +1,27 @@
+import { Metadata } from "next";
+import Sidebar from "@/components/Blog/Homepage/Sidebar";
+import Navigation from "@/components/Blog/Homepage/Navigation";
+import Footer from "@/components/Blog/Homepage/Footer";
+import Cards from "@/components/Blog/Homepage/Cards";
+import { PostsProvider } from "@/context/Provider";
+
+export const metadata: Metadata = {
+	title: "VEOveneht",
+};
+
+export default function Home() {
+	return (
+		<>
+			<Navigation />
+			<main className="w-full flex justify-center bg-[#f2f6f8]">
+				<div className="max-w-[1100px] h-full flex justify-between flex-col md:flex-row gap-4 p-4">
+					<PostsProvider>
+						<Cards />
+						<Sidebar />
+					</PostsProvider>
+				</div>
+			</main>
+			<Footer />
+		</>
+	);
+}

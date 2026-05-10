@@ -3,7 +3,7 @@ import { useRouter } from "next/navigation";
 import { CldUploadWidget } from "next-cloudinary";
 
 import { addPost } from "@/lib/api";
-import Tiptap from "@/components/RichTextEditor/Tiptap";
+import Tiptap from "@/components/Blog/RichTextEditor/Tiptap";
 
 function generateSlug(title: string) {
 	return title

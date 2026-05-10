@@ -1,4 +1,4 @@
-import AdsBanner from "@/components/AdsBanner";
+import AdsBanner from "@/components/Blog/AdsBanner";
 
 export const AdsBox = () => {
 	return (

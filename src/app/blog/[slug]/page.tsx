@@ -4,12 +4,12 @@ import { useEffect, useState } from "react";
 
 import { getPosts } from "@/lib/api";
 import { typesPosts } from "@/lib/types";
-import { LoadingComponent, NotFound } from "@/components/Status";
+import { LoadingComponent, NotFound } from "@/components/Blog/Status";
 
-import Navigation from "@/components/Homepage/Navigation";
-import Footer from "@/components/Homepage/Footer";
-import Sidebar from "@/components/Homepage/Sidebar";
-import Comment from "@/components/Homepage/Comment";
+import Navigation from "@/components/Blog/Homepage/Navigation";
+import Footer from "@/components/Blog/Homepage/Footer";
+import Sidebar from "@/components/Blog/Homepage/Sidebar";
+import Comment from "@/components/Blog/Homepage/Comment";
 
 function generateSlug(title: string) {
 	return title

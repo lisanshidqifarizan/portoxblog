@@ -5,11 +5,11 @@ import Link from "next/link";
 
 import { getPosts } from "@/lib/api";
 import { typesPosts } from "@/lib/types";
-import { LoadingComponent, NotFound } from "@/components/Status";
+import { LoadingComponent, NotFound } from "@/components/Blog/Status";
 
-import Navigation from "@/components/Homepage/Navigation";
-import Sidebar from "@/components/Homepage/Sidebar";
-import Footer from "@/components/Homepage/Footer";
+import Navigation from "@/components/Blog/Homepage/Navigation";
+import Sidebar from "@/components/Blog/Homepage/Sidebar";
+import Footer from "@/components/Blog/Homepage/Footer";
 
 function generateTag(tag: string[]) {
 	return tag;

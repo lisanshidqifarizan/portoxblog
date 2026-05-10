@@ -3,11 +3,11 @@
 import { useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import AddPost from "@/components/Dashboard/AddPost";
-import MyPosts from "@/components/Dashboard/MyPosts";
-import Gallery from "@/components/Dashboard/Gallery";
-import Users from "@/components/Dashboard/Users";
-import { Notification } from "@/components/Status";
+import AddPost from "@/components/Blog/Dashboard/AddPost";
+import MyPosts from "@/components/Blog/Dashboard/MyPosts";
+import Gallery from "@/components/Blog/Dashboard/Gallery";
+import Users from "@/components/Blog/Dashboard/Users";
+import { Notification } from "@/components/Blog/Status";
 import { getProfile } from "@/lib/api";
 import { useAuth } from "@/context/Provider";
 

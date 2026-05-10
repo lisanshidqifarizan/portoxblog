@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { getPostById, updatePost } from "@/lib/api";
 import { CldUploadWidget } from "next-cloudinary";
-import Tiptap from "@/components/RichTextEditor/Tiptap";
+import Tiptap from "@/components/Blog/RichTextEditor/Tiptap";
 
 export default function CEdit() {
 	const router = useRouter();

@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 import { SitemapEntry } from "@/lib/types";
-import { LoadingComponent, Notification } from "@/components/Status";
+import { LoadingComponent, Notification } from "@/components/Blog/Status";
 
 export default function SitemapPage() {
 	const [sitemap, setSitemap] = useState<SitemapEntry[]>([]);

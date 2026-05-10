@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 
-import { LoadingComponent, NotFound } from "@/components/Status";
+import { LoadingComponent, NotFound } from "@/components/Blog/Status";
 import { usePosts } from "@/context/Provider";
 
 export default function Cards() {
